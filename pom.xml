@@ -43,7 +43,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>3.8.1</version>
+            <version>${webdrivermanager.version}</version>
         </dependency>
 
 
@@ -111,19 +111,19 @@
     <build>
         <plugins>
             <!-- Apache Maven SureFire Plugin -->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>${maven.surefire.version}</version>-->
-<!--                <configuration>-->
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
-<!--                    <argLine>-->
-<!--                        -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar-->
-<!--                    </argLine>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+                    </argLine>
+                </configuration>
+            </plugin>
 
             <!-- This plugin signs all of the project's attached artifacts with GnuPG -->
             <plugin>
@@ -157,7 +157,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>3.2.0</version>
             </plugin>
         </plugins>
     </build>

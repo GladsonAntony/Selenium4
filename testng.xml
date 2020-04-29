@@ -1,2 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="F:/Training/Selenium4Training/src/test/java/DevToolsTest.java"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="F:/Training/Selenium4Training">
+        <classes>
+            <class name="testseleniumnewfeatures.DevToolsTest">
+                <methods>
+                    <include name="emulateNetworkConditionTest"/>
+                    <include name="userAgentOverride"/>
+                    <include name="webToMobileView"/>
+                    <include name="loadInsecureWebsite"/>
+                </methods>
+            </class>
+            <class name="testseleniumnewfeatures.LocationTests">
+                <methods>
+                    <include name="location"/>
+                </methods>
+            </class>
+            <class name="testseleniumnewfeatures.NavigateTest">
+                <methods>
+                    <include name="openNewTab"/>
+                    <include name="openNewWindow"/>
+                </methods>
+            </class>
+            <class name="testseleniumnewfeatures.RelativeTests">
+                <methods>
+                    <include name="test_Relative"/>
+                </methods>
+            </class>
+            <class name="testseleniumnewfeatures.RemoteTest">
+                <methods>
+                    <include name="remoteTest"/>
+                </methods>
+            </class>
+            <class name="testseleniumnewfeatures.ScreenShotTests">
+                <methods>
+                    <include name="screenshotTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

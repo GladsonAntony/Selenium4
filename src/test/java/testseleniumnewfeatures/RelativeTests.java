@@ -1,3 +1,5 @@
+package testseleniumnewfeatures;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +12,7 @@ import static org.openqa.selenium.support.locators.RelativeLocator.withTagName;
 public class RelativeTests {
 
     @Test
-    public void X() {
+    public void test_Relative() {
 
         WebDriverManager.chromedriver().setup();
 

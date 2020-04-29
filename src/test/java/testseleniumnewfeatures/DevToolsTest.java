@@ -1,17 +1,16 @@
+package testseleniumnewfeatures;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.network.Network;
-import org.openqa.selenium.devtools.network.model.ConnectionType;
 import org.openqa.selenium.devtools.security.Security;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.Optional;
-
-import static org.openqa.selenium.devtools.network.Network.emulateNetworkConditions;
 
 public class DevToolsTest {
 
