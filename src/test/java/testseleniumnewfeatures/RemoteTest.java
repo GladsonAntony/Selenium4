@@ -15,7 +15,7 @@ import java.net.URI;
 public class RemoteTest {
 
 
-    @Test
+    @Test(enabled = false)
     public void remoteTest() {
         ChromeOptions chromeOptions = new ChromeOptions();
         DesiredCapabilities caps = new DesiredCapabilities();
