@@ -22,19 +22,29 @@
                     <include name="openNewWindow"/>
                 </methods>
             </class>
-            <class name="newseleniumfeatures.relativelocators.Example01">
-                <methods>
-                    <include name="test_Relative"/>
-                </methods>
-            </class>
             <class name="newseleniumfeatures.RemoteTest">
                 <methods>
                     <include name="remoteTest"/>
                 </methods>
             </class>
-            <class name="newseleniumfeatures.ScreenShotTests">
+            <class name="newseleniumfeatures.relativelocators.Example01">
                 <methods>
-                    <include name="screenshotTest"/>
+                    <include name="test_RelativeExample01"/>
+                </methods>
+            </class>
+            <class name="newseleniumfeatures.screenshotfeature.Example01_ChromeWebElement">
+                <methods>
+                    <include name="test_ChromeWebElementScreenshot"/>
+                </methods>
+            </class>
+            <class name="newseleniumfeatures.screenshotfeature.Example02_ChromeWebPage">
+                <methods>
+                    <include name="test_ChromeWebPageScreenshot"/>
+                </methods>
+            </class>
+            <class name="newseleniumfeatures.screenshotfeature.Example03_FirefoxFullWebPage">
+                <methods>
+                    <include name="test_FirefoxFullWebPageScreenshot"/>
                 </methods>
             </class>
         </classes>
