@@ -1,21 +1,16 @@
-package testseleniumnewfeatures;
+package newseleniumfeatures;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.io.IOException;
-
-public class ScreenShotTests {
+public class LocationTests {
 
     @Test
-    public void screenshotTest() {
+    public void location() {
 
         WebDriverManager.chromedriver().setup();
 
@@ -24,12 +19,10 @@ public class ScreenShotTests {
 
         WebElement logo = driver.findElement(By.className("fusion-logo-link"));
 
-        File file = logo.getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(file, new File("logo.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        System.out.println("Height is " + logo.getRect().getDimension().getHeight());
+        System.out.println("Width is " + logo.getRect().getDimension().getWidth());
+        System.out.println("Location X is " + logo.getRect().getX());
+        System.out.println("Location Y is " + logo.getRect().getY());
     }
 
 }

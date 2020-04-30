@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="F:/Training/Selenium4Training">
         <classes>
-            <class name="testseleniumnewfeatures.DevToolsTest">
+            <class name="newseleniumfeatures.DevToolsTest">
                 <methods>
                     <include name="emulateNetworkConditionTest"/>
                     <include name="userAgentOverride"/>
@@ -11,28 +11,28 @@
                     <include name="loadInsecureWebsite"/>
                 </methods>
             </class>
-            <class name="testseleniumnewfeatures.LocationTests">
+            <class name="newseleniumfeatures.LocationTests">
                 <methods>
                     <include name="location"/>
                 </methods>
             </class>
-            <class name="testseleniumnewfeatures.NavigateTest">
+            <class name="newseleniumfeatures.NavigateTest">
                 <methods>
                     <include name="openNewTab"/>
                     <include name="openNewWindow"/>
                 </methods>
             </class>
-            <class name="testseleniumnewfeatures.RelativeTests">
+            <class name="newseleniumfeatures.relativelocators.Example01">
                 <methods>
                     <include name="test_Relative"/>
                 </methods>
             </class>
-            <class name="testseleniumnewfeatures.RemoteTest">
+            <class name="newseleniumfeatures.RemoteTest">
                 <methods>
                     <include name="remoteTest"/>
                 </methods>
             </class>
-            <class name="testseleniumnewfeatures.ScreenShotTests">
+            <class name="newseleniumfeatures.ScreenShotTests">
                 <methods>
                     <include name="screenshotTest"/>
                 </methods>

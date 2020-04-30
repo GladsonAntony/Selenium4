@@ -1,4 +1,4 @@
-package testseleniumnewfeatures;
+package newseleniumfeatures;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
