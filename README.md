@@ -1,4 +1,4 @@
-# Selenium 4 New Features - Demo
+# ![Selenium](https://www.selenium.dev/images/selenium_logo_square_red.png) 4 New Features - Demo
 ---
 ## Relative locators introduced as part of Selenium 4.
 | Locators    | Description                              |
@@ -55,6 +55,17 @@ chromeDriver.switchTo().newWindow(WindowType.WINDOW);
 ```java
 chromeDriver.switchTo().newWindow(WindowType.TAB);
 ```
+
+### Window Minimize
+```java
+chromeDriver.manage().window().minimize();
+```
+
+### Window FullScreen
+```java
+chromeDriver.manage().window().fullscreen();
+```
+
 
 
 

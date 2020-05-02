@@ -16,12 +16,6 @@
                     <include name="location"/>
                 </methods>
             </class>
-            <class name="newseleniumfeatures.NavigateTest">
-                <methods>
-                    <include name="openNewTab"/>
-                    <include name="openNewWindow"/>
-                </methods>
-            </class>
             <class name="newseleniumfeatures.RemoteTest">
                 <methods>
                     <include name="remoteTest"/>
@@ -57,6 +51,16 @@
                 <methods>
                     <include name="test_ChromeNewTab"/>
                     <include name="test_FirefoxNewTab"/>
+                </methods>
+            </class>
+            <class name="newseleniumfeatures.windowmanager.Example03_MinimizeWindow">
+                <methods>
+                    <include name="test_ChromeMinimize"/>
+                </methods>
+            </class>
+            <class name="newseleniumfeatures.windowmanager.Example04_FullScreen">
+                <methods>
+                    <include name="test_ChromeFullScreen"/>
                 </methods>
             </class>
         </classes>
