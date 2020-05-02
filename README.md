@@ -1,5 +1,5 @@
 # Selenium 4 New Features - Demo
-
+---
 ## Relative locators introduced as part of Selenium 4.
 | Locators    | Description                              |
 |-------------|------------------------------------------|
@@ -9,6 +9,7 @@
 | below()     | Element located below with respect to the specified element. |
 | near()      | Element is at most 50 pixels far away from the specified element. The pixel value can be modified. |
 
+---
 ## Selenium 4 Built-In Screenshot Capability
 
 ### Chrome/Firefox Screen Capture of WebElement
@@ -41,5 +42,22 @@ public void test_FirefoxFullWebPageScreenshot() throws Exception
     FileUtils.copyFile(file, new File("./target/SeleniumDevFullPageCapture.png"));
 }
 ```
+---
+
+## Selenium 4 Window Handler
+
+### Chrome/Firefox Open in New Window
+```java
+chromeDriver.switchTo().newWindow(WindowType.WINDOW);
+```
+
+### Chrome/Firefox Open in New Tab
+```java
+chromeDriver.switchTo().newWindow(WindowType.TAB);
+```
+
+
+
+
 
 

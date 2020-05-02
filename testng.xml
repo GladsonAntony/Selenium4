@@ -47,6 +47,18 @@
                     <include name="test_FirefoxFullWebPageScreenshot"/>
                 </methods>
             </class>
+            <class name="newseleniumfeatures.windowmanager.Example01_NewWindow">
+                <methods>
+                    <include name="test_ChromeNewWindow"/>
+                    <include name="test_FirefoxNewWindow"/>
+                </methods>
+            </class>
+            <class name="newseleniumfeatures.windowmanager.Example02_NewTab">
+                <methods>
+                    <include name="test_ChromeNewTab"/>
+                    <include name="test_FirefoxNewTab"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
